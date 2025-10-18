@@ -3,7 +3,7 @@ import { Home, Wrench, Shield, FileCheck } from "lucide-react";
 const services = [
   {
     icon: Home,
-    title: "Proteção para janelas e varandas",
+    title: "Proteção para janelas e varandas e muito mai",
     description: "Instalação profissional de redes em janelas, sacadas e áreas externas.",
   },
   {
@@ -19,7 +19,7 @@ const services = [
   {
     icon: FileCheck,
     title: "Garantia de qualidade",
-    description: "Acompanhamento pós-instalação e certificado de garantia.",
+    description: "Produtos de altissima qualidade e mão de obra especializada.",
   },
 ];
 

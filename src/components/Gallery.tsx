@@ -1,15 +1,24 @@
 import { useState } from "react";
 import { X } from "lucide-react";
+import sacada1 from "@/assets/sacada1.jpeg";
 import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
+import piscina1 from "@/assets/piscina1.jpeg";
+import piscina2 from "@/assets/piscina2.jpeg";
+import quadra5 from "@/assets/quadra5.jpeg";
+import quadra4 from "@/assets/quadra4.jpeg";
+import quadra3 from "@/assets/quadra3.jpeg";
+import quadra1 from "@/assets/quadra1.jpeg";
+
 
 const images = [
-  { src: gallery1, alt: "Varanda residencial com rede de proteção", location: "Apartamento - São Paulo" },
-  { src: gallery2, alt: "Janela com rede de proteção", location: "Residência - Zona Sul" },
-  { src: gallery3, alt: "Instalação comercial", location: "Prédio Comercial - Centro" },
-  { src: gallery4, alt: "Família segura", location: "Apartamento Familiar - Zona Oeste" },
+  { src: sacada1, alt: "Varanda residencial com rede de proteção", location: "Apartamento - Zona Sul" },
+  { src: gallery1, alt: "Janela com rede de proteção", location: "Residência - Zona Sul" },
+  { src: piscina1, alt: "Instalação comercial", location: "Prédio Comercial - Centro" },
+  { src: piscina2, alt: "Piscina com rede de proteção", location: "Condomínio Residencial - Zona Norte" },
+  { src: quadra1, alt: "Quadra esportiva com rede de proteção", location: "Clube Esportivo - Bairro Nobre" },
+  { src: quadra3, alt: "Quadra de tênis com rede de proteção", location: "Residência Privada - Zona Oeste" },
+  { src: quadra4, alt: "Quadra poliesportiva com rede de proteção", location: "Escola - Centro" },
+  { src: quadra5, alt: "Quadra de futebol com rede de proteção", location: "Parque Municipal - Zona Leste" },
 ];
 
 const Gallery = () => {

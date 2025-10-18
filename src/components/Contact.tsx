@@ -14,15 +14,29 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Basic validation
+
     if (!formData.name || !formData.phone || !formData.message) {
       toast.error("Por favor, preencha todos os campos");
       return;
     }
 
-    // Simulate form submission
-    toast.success("Mensagem enviada com sucesso! Entraremos em contato em breve.");
+    // Número do WhatsApp (formato: 55 + DDD + número)
+    const whatsappNumber = "5516993538817";
+
+    // Mensagem formatada
+    const text = `Olá! 👋\nTenho interesse nos serviços da ICE Telas.\n\n*Nome:* ${formData.name}\n*Telefone:* ${formData.phone}\n*Mensagem:* ${formData.message}`;
+    const encodedText = encodeURIComponent(text);
+
+    // Monta a URL do WhatsApp
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+
+    // Mostra toast de sucesso
+    toast.success("Abrindo WhatsApp...");
+
+    // Abre WhatsApp em nova aba
+    window.open(whatsappUrl, "_blank");
+
+    // Limpa o formulário
     setFormData({ name: "", phone: "", message: "" });
   };
 
@@ -53,6 +67,7 @@ const Contact = () => {
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   placeholder="Seu nome"
                   className="w-full"
+                  required
                 />
               </div>
 
@@ -67,6 +82,7 @@ const Contact = () => {
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   placeholder="(11) 99999-9999"
                   className="w-full"
+                  required
                 />
               </div>
 
@@ -80,6 +96,7 @@ const Contact = () => {
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder="Conte-nos sobre seu projeto..."
                   className="w-full min-h-[150px]"
+                  required
                 />
               </div>
 
@@ -101,9 +118,9 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold text-foreground text-lg mb-1">Endereço</h3>
                 <p className="text-muted-foreground">
-                  Rua Exemplo, 123 - Centro
+                  Cidade de Dumont, SP 14120-000
                   <br />
-                  São Paulo, SP - CEP 00000-000
+                  
                 </p>
               </div>
             </div>
@@ -115,9 +132,8 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold text-foreground text-lg mb-1">Telefone</h3>
                 <p className="text-muted-foreground">
-                  (11) 99999-9999
+                  +55 (16) 99353-8817
                   <br />
-                  (11) 3333-4444
                 </p>
               </div>
             </div>
@@ -128,7 +144,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-foreground text-lg mb-1">Email</h3>
-                <p className="text-muted-foreground">contato@icetelas.com.br</p>
+                <p className="text-muted-foreground">icetelas@gmail.com</p>
               </div>
             </div>
 
@@ -139,9 +155,9 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold text-foreground text-lg mb-1">Horário</h3>
                 <p className="text-muted-foreground">
-                  Segunda a Sexta: 8h às 18h
+                  Segunda a Sexta: 8h às 17h
                   <br />
-                  Sábado: 8h às 13h
+                  Sábado: 8h às 12h
                 </p>
               </div>
             </div>
