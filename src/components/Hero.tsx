@@ -35,7 +35,7 @@ const Hero = () => {
           Proteção com excelência, confiança e qualidade.
         </h1>
         <p className="text-lg sm:text-xl text-white/90 mb-10 max-w-2xl mx-auto drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)] animate-fade-in">
-          Redes de proteção residenciais e comerciais com instalação profissional e materiail de ótima qualidade
+          Redes de proteção residenciais e comerciais com instalação profissional e material de ótima qualidade
         </p>
 
         {/* Botões */}
