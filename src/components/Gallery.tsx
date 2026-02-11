@@ -8,7 +8,7 @@ import quadra5 from "@/assets/quadra5.jpeg";
 import quadra4 from "@/assets/quadra4.jpeg";
 import quadra3 from "@/assets/quadra3.jpeg";
 import quadra1 from "@/assets/quadra1.jpeg";
-import janela1 from "@/assets/janela1 (2).jpeg"
+import janela1 from "@/assets/janela1.jpeg"
 import janela2 from "@/assets/janela2.jpeg"
 import janela3 from "@/assets/Janela4.jpeg"
 import janela4 from "@/assets/Janela5.jpeg"
