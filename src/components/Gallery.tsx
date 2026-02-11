@@ -8,18 +8,31 @@ import quadra5 from "@/assets/quadra5.jpeg";
 import quadra4 from "@/assets/quadra4.jpeg";
 import quadra3 from "@/assets/quadra3.jpeg";
 import quadra1 from "@/assets/quadra1.jpeg";
+import janela1 from "@/assets/janela1 (2).jpeg"
+import janela2 from "@/assets/janela2.jpeg"
+import janela3 from "@/assets/Janela4.jpeg"
+import janela4 from "@/assets/Janela5.jpeg"
+import sacadaDentro from "@/assets/SacadaDentro.jpeg"
+import sacadaFora from "@/assets/SacadaFora.jpeg"
 
 
 const images = [
   { src: sacada1, alt: "Varanda residencial com rede de proteção", location: "Apartamento - Zona Sul" },
   { src: gallery1, alt: "Janela com rede de proteção", location: "Residência - Zona Sul" },
-  { src: piscina1, alt: "Instalação comercial", location: "Prédio Comercial - Centro" },
+  { src: janela1, alt: "Janela com rede de proteção instalada", location: "Apartamento Residencial" },
+  { src: janela2, alt: "Janela protegida com rede de segurança", location: "Residência Familiar" },
+  { src: janela3, alt: "Rede de proteção em janela ampla", location: "Apartamento - Andar Alto" },
+  { src: janela4, alt: "Janela com rede de proteção discreta", location: "Condomínio Residencial" },
+  { src: sacadaDentro, alt: "Sacada com rede de proteção vista interna", location: "Apartamento - Vista Interna" },
+  { src: sacadaFora, alt: "Sacada com rede de proteção vista externa", location: "Apartamento - Fachada" },
+  { src: piscina1, alt: "Instalação comercial com rede de proteção", location: "Prédio Comercial - Centro" },
   { src: piscina2, alt: "Piscina com rede de proteção", location: "Condomínio Residencial - Zona Norte" },
   { src: quadra1, alt: "Quadra esportiva com rede de proteção", location: "Clube Esportivo - Bairro Nobre" },
   { src: quadra3, alt: "Quadra de tênis com rede de proteção", location: "Residência Privada - Zona Oeste" },
   { src: quadra4, alt: "Quadra poliesportiva com rede de proteção", location: "Escola - Centro" },
   { src: quadra5, alt: "Quadra de futebol com rede de proteção", location: "Parque Municipal - Zona Leste" },
 ];
+
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -43,7 +56,7 @@ const Gallery = () => {
               className="relative group cursor-pointer overflow-hidden rounded-lg shadow-soft hover:shadow-elevated transition-all duration-300"
               onClick={() => setSelectedImage(index)}
             >
-              <img
+              <img  
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-110"

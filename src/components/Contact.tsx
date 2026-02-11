@@ -155,7 +155,7 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold text-foreground text-lg mb-1">Horário</h3>
                 <p className="text-muted-foreground">
-                  Segunda a Sexta: 8h às 17h
+                  Segunda a Sexta: 8h às 18h
                   <br />
                   Sábado: 8h às 12h
                 </p>
