@@ -101,7 +101,7 @@ const Footer = () => {
           <p className="text-background/60 text-sm">
            💡 Desenvolvido por{" "}
             <a
-              href="https://www.linkedin.com/in/marcelo-batista-561871219/" 
+              href="https://marcelobatista-portifolio.vercel.app/" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary font-semibold hover:underline hover:text-primary/90 transition-colors"
