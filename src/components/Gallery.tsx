@@ -10,9 +10,9 @@ import quadra3 from "@/assets/quadra3.jpeg";
 import quadra1 from "@/assets/quadra1.jpeg";
 import janela1 from "@/assets/janela1.jpeg"
 import janela2 from "@/assets/janela2.jpeg" 
-import janela3 from "@/assets/janela4.jpeg"
-import janela4 from "@/assets/Janela5.jpeg"
-import sacadadentro from "@/assets/sacadadentro.jpeg"
+import janela3 from "@/assets/janela3.jpeg"
+import janela4 from "@/assets/Janela4.jpeg"
+import sacadadentro from "@/assets/sacadadtro.jpeg"
 import sacadafora from "@/assets/sacadafora.jpeg"
 
 
