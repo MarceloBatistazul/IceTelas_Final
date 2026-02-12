@@ -12,8 +12,9 @@ import janela1 from "@/assets/janela1.jpeg"
 import janela2 from "@/assets/janela2.jpeg" 
 import janela3 from "@/assets/janela3.jpeg"
 import janela4 from "@/assets/janela4.jpeg"
-//import sacadadentro from "@/assets/sacadadentro.jpeg"
-//import sacadafora from "@/assets/sacadafora.jpeg"
+import sacadadentro from "@/assets/sacadadentro.jpeg"
+import sacadafora from "@/assets/sacadafora.jpeg"
+
 
 
 const images = [
@@ -23,8 +24,8 @@ const images = [
   { src: janela2, alt: "Janela protegida com rede de segurança", location: "Residência Familiar" },
   { src: janela3, alt: "Rede de proteção em janela ampla", location: "Apartamento - Andar Alto" },
   { src: janela4, alt: "Janela com rede de proteção discreta", location: "Condomínio Residencial" },
- // { src: sacadadentro, alt: "Sacada com rede de proteção vista interna", location: "Apartamento - Vista Interna" },
- // { src: sacadafora, alt: "Sacada com rede de proteção vista externa", location: "Apartamento - Fachada" },
+  { src: sacadadentro, alt: "Sacada com rede de proteção vista interna", location: "Apartamento - Vista Interna" },
+  { src: sacadafora, alt: "Sacada com rede de proteção vista externa", location: "Apartamento - Fachada" },
   { src: piscina1, alt: "Instalação comercial com rede de proteção", location: "Prédio Comercial - Centro" },
   { src: piscina2, alt: "Piscina com rede de proteção", location: "Condomínio Residencial - Zona Norte" },
   { src: quadra1, alt: "Quadra esportiva com rede de proteção", location: "Clube Esportivo - Bairro Nobre" },
