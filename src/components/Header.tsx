@@ -58,7 +58,7 @@ const Header = () => {
         {isMobileMenuOpen && (
           <nav className="md:hidden pb-6 animate-fade-in">
             <div className="flex flex-col space-y-4">
-              {["inicio", "servicos", "galeria", "depoimentos", "contato"].map((item) => (
+              {["inicio", "serviços", "galeria", "depoimentos", "contato"].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item)}
